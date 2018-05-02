@@ -2,8 +2,7 @@
 #
 #
 
-szam, szr1 = input('Adjon meg egy számot és annak számrendszerét!: ')
-szr2 = int(input('Adja meg hanyas számrendszerbe szeretné átváltani!: '))
-print(szam)
-print(szr1)
-print(szr2)
+dates = input('Adjon meg egy számot, annak számrendszerét és a cél számrendszert!: ')
+szam, szr1, szr2 = dates.split(',')
+
+print('A megadott szám (', szam, ') a kiválasztott számrendszerben (', szr2, ') : ', atvaltas(szam, szr1, szr2))
